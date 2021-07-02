@@ -18,3 +18,9 @@ RUN python -m pip install detectron2 -f \
 
 # Development packages
 RUN pip install flask flask-cors requests opencv-python
+
+COPY autocrop.py .
+COPY backlit.jpg .
+
+# This isn't right. I don't want to run this yet 
+#RUN python autocrop.py
